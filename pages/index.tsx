@@ -1,3 +1,4 @@
+import tw from "tailwind-styled-components";
 import React from 'react';
 import Image from 'next/image';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
@@ -135,3 +136,14 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+const Container = tw.div`
+ w-screen
+ h-screen
+ bg-gradient-color
+ text-white
+ px-7
+ flex
+ flex-col
+ justify-between
+`
